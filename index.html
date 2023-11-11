@@ -132,8 +132,6 @@ $$\displaystyle\lim_{\class{fragment highlight-current-red}{\data{fragment-index
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
-		<script src="plugin/pointer/pointer.js"></script>
-		<link rel="stylesheet" href="plugin/pointer/pointer.css" />
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
@@ -161,19 +159,12 @@ $$\displaystyle\lim_{\class{fragment highlight-current-red}{\data{fragment-index
 							'[+]': ['html']
 						},},
 				},
-				pointer: {
-					key: "q", // key to enable pointer, default "q", not case-sensitive
-					color: "red", // color of a cursor, default "red" any valid CSS color
-					opacity: 0.4, // opacity of cursor, default 0.8
-					pointerSize: 40, // pointer size in px, default 12
-					alwaysVisible: false, // should pointer mode be always visible? default "false"
-					tailLength: 10, // NOT IMPLEMENTED YET!!! how long the "tail" should be? default 10
-				},
+				
 
 				
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealPointer, RevealMath.MathJax3]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.MathJax3]
 			});
 		</script>
 	</body>
