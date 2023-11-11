@@ -132,7 +132,8 @@ $$\displaystyle\lim_{\class{fragment highlight-current-red}{\data{fragment-index
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
-		<script src="plugin/math/math.js"></script>
+		<script src="plugin/pointer/pointer.js"></script>
+		<link rel="stylesheet" href="plugin/pointer/pointer.css" />
 		<script src="plugin/mouse-pointer/mouse-pointer.js"></script>
 		<script>
 			// More info about initialization & config:
@@ -169,6 +170,9 @@ $$\displaystyle\lim_{\class{fragment highlight-current-red}{\data{fragment-index
 					alwaysVisible: false, // should pointer mode be always visible? default "false"
 					tailLength: 10, // NOT IMPLEMENTED YET!!! how long the "tail" should be? default 10
 				},
+				dependencies: [
+					{ src: 'plugin/mouse-pointer/mouse-pointer.js', async: true }, 
+				],
 
 				
 
