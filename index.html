@@ -43,18 +43,20 @@
 				history: true,
 				transition: 'linear',
 
-				mathjax2: {
-					config: 'TeX-AMS_HTML-full',
-					TeX: {
-						Macros: {
-							R: '\\mathbb{R}',
-							set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
-						}
-					}
+				mathjax3: {
+					mathjax: "https://cdn.jsdelivr.net/npm/mathjax@4.0.0-alpha.1/es5/tex-mml-chtml.js",
+					loader: {
+						load: ['[tex]/html'],
+					},
+					tex: {
+						packages: {
+							'[+]': ['html']
+						},},
 				},
 
+
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.MathJax2 ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.MathJax3 ]
 			});
 		</script>
 	</body>
