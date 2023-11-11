@@ -4,7 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Limits</title> <link rel="icon" type="image/x-icon" href="calculus.ico">
+
+		<meta name="description" content="Limits">
+		<meta name="author" content="Mohamed Khaled Khalifa">
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -12,6 +15,61 @@
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+<style>
+
+/* css handles the parentheses/brackets */
+    .laparent ol { counter-reset: item }
+    .laparent li { display: block ; counter-increment: item; }
+    /* replace the counter before list item with
+              open parenthesis + counter + close parenthesis */
+    .laparent li:before { content: " (" counter(item,lower-alpha) ") "; }
+
+p {
+  font-size: 0.7em;
+    line-height: 1.2em;
+    vertical-align: center;
+}
+
+#block {
+  background: #848B79;
+  color: black;
+  padding: 15px;
+  width: "device-width";
+border-left: 10px solid Tomato;
+font-size: 0.7em;
+line-height: 1.2em;
+    vertical-align: center;
+}
+}
+
+#thm {
+  background: #33ECFF;
+  color: black;
+  padding: 15px;
+  width: 100%;
+border-left: 10px solid #5B2C6F;
+}
+
+
+#thm:before{
+    content:"Theorem.\00a0\00a0";
+    float:left;
+    font-weight:bold;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+flex-direction: row;
+align-items: center;
+font-size: 0.7em;
+line-height: 1.2em;
+    vertical-align: center;
+
+}
+
+</style>
+		
 	</head>
 	<body>
 		<div class="reveal">
