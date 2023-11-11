@@ -39,8 +39,8 @@
     .laparent li:before { content: " (" counter(item,lower-alpha) ") "; }
 
 p {
-  font-size: 1.0em;
-    line-height: 1.5em;
+  font-size: 0.8em;
+    line-height: 1.2em;
     vertical-align: center;
 }
 
@@ -50,8 +50,8 @@ p {
   padding: 15px;
   width: "device-width";
 border-left: 10px solid Tomato;
-font-size: 1.0em;
-line-height: 1.5em;
+font-size: 0.8em;
+line-height: 1.2em;
     vertical-align: center;
 }
 }
@@ -61,8 +61,8 @@ line-height: 1.5em;
   justify-content: space-between;
 flex-direction: row;
 align-items: center;
-font-size: 1.0em;
-line-height: 1.5em;
+font-size: 0.8em;
+line-height: 1.2em;
     vertical-align: center;
 
 }
@@ -719,6 +719,8 @@ $$\lim_{x\to a}h(x)=\lim_{x\to a}g(x)=L \implies \lim_{x\to a}f(x)=L$$
 				height: 700,
 				// Factor of the display size that should remain empty around// the content
 				margin: 0.04,
+				minScale: 0.2,
+				maxScale: 2.0,
 				hash: true,
 				history: true,
 				transition: 'linear',
