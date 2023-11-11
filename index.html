@@ -20,14 +20,7 @@
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
 
-		<script type="text/x-mathjax-config">
-			MathJax.Hub.Config({
-			  tex2jax: {inlineMath: [['$','$']]},
-			  "HTML-CSS": { linebreaks: { automatic: true } },
-			  CommonHTML: { linebreaks: { automatic: true } },
-			  SVG: { linebreaks: { automatic: true } }
-			  });
-		</script>
+		
 <style>
 
 /* css handles the parentheses/brackets */
@@ -724,6 +717,14 @@ $$\lim_{x\to a}h(x)=\lim_{x\to a}g(x)=L \implies \lim_{x\to a}f(x)=L$$
 		<script src="plugin/highlight/highlight.js"></script>
 		<script src="plugin/math/math.js"></script>
 		<script src="plugin/pointer/pointer.js"></script>
+	<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+			  tex2jax: {inlineMath: [['$','$']]},
+			  "HTML-CSS": { linebreaks: { automatic: true } },
+			  CommonHTML: { linebreaks: { automatic: true } },
+			  SVG: { linebreaks: { automatic: true } }
+			  });
+		</script>
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
@@ -759,6 +760,7 @@ $$\lim_{x\to a}h(x)=\lim_{x\to a}g(x)=L \implies \lim_{x\to a}f(x)=L$$
 							'[+]': ['html']
 						},},
 				},
+				
 
 
 				// Learn about plugins: https://revealjs.com/plugins/
