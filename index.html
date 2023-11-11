@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 		<script type="text/x-mathjax-config">
 			MathJax.Hub.Config({
 			  tex2jax: {inlineMath: [['$','$']]},
@@ -39,8 +39,8 @@
     .laparent li:before { content: " (" counter(item,lower-alpha) ") "; }
 
 p {
-	font-size: 0.7em;
-	line-height: 1em;
+	font-size: 0.75em;
+	line-height: 1.35em;
 	vertical-align: center;
 }	
 
@@ -48,22 +48,22 @@ p {
 #block {
 	background: #848B79;
 	color: black;
-	padding: 15px;
+	padding: 10px;
 	width: "device-width";
 	border-left: 10px solid Tomato;
-	font-size: 0.7em;
-	line-height: 1em;
+	font-size: 0.75em;
+	line-height: 1.35em;
 	vertical-align: center;
 }
 
 
-#container {
+.container {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
 	align-items: center;
-	font-size: 0.7em;
-	line-height: 1em;
+	font-size: 0.75em;
+	line-height: 1.35em;
 	vertical-align: center;
 }
 
@@ -88,7 +88,7 @@ p {
 
 <div id="block" align="justify">
 <ol align="justify">
-<span class="fragment fade-up" data-fragment-index="1"> <li> The input $x$ can be arbitrarly approximated to $a$ (bigger and smaller).
+<span class="fragment fade-up" data-fragment-index="1"> <li> The input $x$ can be approximated by $a$ (bigger and smaller).
 </li></span>
   <span class="fragment fade-up" data-fragment-index="2"> <li> If the input $x\approx a$, then the output $f(x)\approx L$.</li></span>
   <span class="fragment fade-up" data-fragment-index="3"> <li>The error in $f(x)\approx L$ can be made <span class="fragment highlight-current-red" data-fragment-index="3"> as small as desired </span> by making the error in $x\approx a$ small enough (not neccessarily zero).</li></span>
