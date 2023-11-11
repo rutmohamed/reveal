@@ -4,10 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Limits</title> <link rel="icon" type="image/x-icon" href="calculus.ico">
-
-		<meta name="description" content="Limits">
-		<meta name="author" content="Mohamed Khaled Khalifa">
+		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -15,115 +12,19 @@
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-<style>
-
-/* css handles the parentheses/brackets */
-    .laparent ol { counter-reset: item }
-    .laparent li { display: block ; counter-increment: item; }
-    /* replace the counter before list item with
-              open parenthesis + counter + close parenthesis */
-    .laparent li:before { content: " (" counter(item,lower-alpha) ") "; }
-
-p {
-  font-size: 0.7em;
-    line-height: 1.2em;
-    vertical-align: center;
-}
-
-#block {
-  background: #848B79;
-  color: black;
-  padding: 15px;
-  width: "device-width";
-border-left: 10px solid Tomato;
-font-size: 0.7em;
-line-height: 1.2em;
-    vertical-align: center;
-}
-}
-
-#thm {
-  background: #33ECFF;
-  color: black;
-  padding: 15px;
-  width: 100%;
-border-left: 10px solid #5B2C6F;
-}
-
-
-#thm:before{
-    content:"Theorem.\00a0\00a0";
-    float:left;
-    font-weight:bold;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-flex-direction: row;
-align-items: center;
-font-size: 0.7em;
-line-height: 1.2em;
-    vertical-align: center;
-
-}
-
-</style>
-		
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
-<h1> Limits </h1>
-</section>
-
-<section>
-<h4 align="justify"> Intuitive Meaning: </h4>
-
-
-<p align="justify">The exprerssion $\displaystyle\lim_{x\to a}f(x)= L$ roughly means:
-</p>
-
-<div id="block" align="justify">
-<ol align="justify">
-<span class="fragment fade-up" data-fragment-index="1"> <li> The input $x$ can be arbitrarly approximated to $a$ (bigger and smaller).
-</li></span>
-  <span class="fragment fade-up" data-fragment-index="2"> <li> If the input $x\approx a$, then the output $f(x)\approx L$.</li></span>
-  <span class="fragment fade-up" data-fragment-index="3"> <li>The error in $f(x)\approx L$ can be made <span class="fragment highlight-current-red" data-fragment-index="3"> as small as desired </span> by making the error in $x\approx a$ small enough (not neccessarily zero).</li></span>
-</ol>
-</div>
-
-<p align="center">
-<span class="fragment fade-in" data-fragment-index="4"> <span class="fragment highlight-blue" data-fragment-index="4"> <b>As the input $x$ approaches $a$, the output $f(x)$ approaches $L$.</b></span></span>
-</p>
-</section>
-
-				<section>
-
-$$\lim_{x\to a}f(x)=L$$
-
-<iframe scrolling="no" title="Limit Definition" src="https://www.geogebra.org/material/iframe/id/uxgqktwv/width/auto/height/auto/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="697px" height="350px" allowfullscreen style="border:0px;"> </iframe>
-</section>
-
-<section>
-$$\displaystyle\lim_{\class{fragment highlight-current-red}{\data{fragment-index=4}{x\to}} \class{fragment highlight-current-green}{\data{fragment-index=2}{a}}}f(x) =  \class{fragment highlight-current-blue}{\data{fragment-index=3}{L}} $$
-
-<p align="justify">
-<span class="fragment fade-in" data-fragment-index="1"> Remember:</span>
-</p>
-
-<div class='container'>
-<ul align="justify">
-<span class="fragment fade-in" data-fragment-index="2"> <li> <span class="fragment highlight-current-green" data-fragment-index="2"> $a$ is not neccessarily a valid input. </span></li> </span>
-<span class="fragment fade-in" data-fragment-index="3"> <li> <span class="fragment highlight-current-blue" data-fragment-index="3"> $L$ is not neccessarily a valid output.</span></li></span>
-<span class="fragment fade-in" data-fragment-index="4"> <li> <span class="fragment highlight-current-red" data-fragment-index="4"> $f(x)$ is defined near $a$ from right and left. </span></li> </span>
-</ul>
-</div> 
-</section>
-
-
-				
+				<section>Slide 1 
+				<div class="fragment">
+							\[  \begin{aligned}
+							\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &amp; = \frac{4\pi}{c}\vec{\mathbf{j}} \\   \nabla \cdot \vec{\mathbf{E}} &amp; = 4 \pi \rho \\
+							\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} &amp; = \vec{\mathbf{0}} \\
+							\nabla \cdot \vec{\mathbf{B}} &amp; = 0 \end{aligned}
+							\]
+						</div>
+				</section>
 				<section>Slide 2</section>
 			</div>
 		</div>
@@ -132,6 +33,7 @@ $$\displaystyle\lim_{\class{fragment highlight-current-red}{\data{fragment-index
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
@@ -140,31 +42,19 @@ $$\displaystyle\lim_{\class{fragment highlight-current-red}{\data{fragment-index
 				hash: true,
 				history: true,
 				transition: 'linear',
-				controls: true,
-				controlsTutorial: true,
-				controlsBackArrows: 'faded',
-				progress: true,
-				slideNumber: false,
-				jumpToSlide: true,
-				pause: true,
-				sortFragmentsOnSync: false,
 
-				mathjax3: {
-					mathjax: "https://cdn.jsdelivr.net/npm/mathjax@4.0.0-alpha.1/es5/tex-mml-chtml.js",
-					loader: {
-						load: ['[tex]/html'],
-					},
-					tex: {
-						packages: {
-							'[+]': ['html']
-						},},
+				mathjax2: {
+					config: 'TeX-AMS_HTML-full',
+					TeX: {
+						Macros: {
+							R: '\\mathbb{R}',
+							set: [ '\\left\\{#1 \\; ; \\; #2\\right\\}', 2 ]
+						}
+					}
 				},
-				
-
-				
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.MathJax3]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.MathJax2 ]
 			});
 		</script>
 	</body>
