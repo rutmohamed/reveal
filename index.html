@@ -38,11 +38,16 @@
               open parenthesis + counter + close parenthesis */
     .laparent li:before { content: " (" counter(item,lower-alpha) ") "; }
 
-#p {
-  font-size: 0.75em;
-    line-height: 1.4em;
-    vertical-align: center;
+
+html *
+{
+   font-size: 1em !important;
+   font-family: Arial !important;
+   line-height: 1.4em !important;;
+   vertical-align: center;
 }
+	
+
 
 #block {
   background: #848B79;
@@ -50,21 +55,14 @@
   padding: 15px;
   width: "device-width";
 border-left: 10px solid Tomato;
-font-size: 0.75em;
-line-height: 1.4em;
-    vertical-align: center;
 }
-}
+
 
 #container {
   display: flex;
   justify-content: space-between;
 flex-direction: row;
 align-items: center;
-font-size: 0.75em;
-line-height: 1.4em;
-    vertical-align: center;
-
 }
 
 </style>
